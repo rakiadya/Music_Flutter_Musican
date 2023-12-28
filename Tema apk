@@ -1,0 +1,55 @@
+Source code tema apk:
+import 'package:flutter/material.dart';
+import 'package:adaptive_theme/adaptive_theme.dart';
+
+// Fungsi asinkron untuk menampilkan bottom sheet pengaturan tema
+Future<void> settings(BuildContext context) async {
+  // Panggil fungsi showModalBottomSheet untuk menampilkan bottom sheet
+  return showModalBottomSheet(
+    // Atur konteks dan bentuk bottom sheet
+    context: context,
+    shape: const RoundedRectangleBorder(
+      borderRadius: BorderRadius.vertical(top: Radius.circular(12)),
+    ),
+    // Atur warna lapisan gelap (overlay) bottom sheet
+    barrierColor: const Color(0xff09101D).withOpacity(0.7),
+    // Bangun tampilan bottom sheet
+    builder: (context) => Container(
+      height: 160,
+      width: MediaQuery.of(context).size.width,
+      padding: const EdgeInsets.all(24),
+      // Kolom untuk menampung elemen-elemen dalam bottom sheet
+      child: Column(
+        children: [
+          const SizedBox(height: 12),
+          const Text('Theme'), // Judul tema
+          const SizedBox(height: 12),
+          // Baris untuk memilih tema (Light/Dark)
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Text('Light'), // Label tema terang
+              const SizedBox(width: 10),
+              // Switch untuk mengganti tema
+              Switch(
+                // Nilai switch sesuai dengan mode tema saat ini
+                value: AdaptiveTheme.of(context).mode.isDark,
+                // Callback ketika nilai switch berubah
+                onChanged: (value) {
+                  // Set tema ke tema gelap jika nilai switch true, jika tidak, set ke tema terang
+                  if (value) {
+                    AdaptiveTheme.of(context).setDark();
+                  } else {
+                    AdaptiveTheme.of(context).setLight();
+                  }
+                },
+              ),
+              const SizedBox(width: 10),
+              const Text('Dark'), // Label tema gelap
+            ],
+          ),
+        ],
+      ),
+    ),
+  );
+}
