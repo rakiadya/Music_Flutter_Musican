@@ -8,3 +8,5 @@ Dengan semua kemudahan ini, aplikasi pemutar musik bukan hanya alat untuk menden
 
 B. Fitur-Fitur 1.Favorit merupakan fitur yang dapat kita gunakan untuk menambahkan ke list lagu favorit kita 2.Play adalah fitur yang digunakan untuk memulaimusik 3.Search adalah fitur yang digunakan untuk mencari sebuah musik 4.Playlist merupakan fitur yang berfungsi sebagai daftar lagu yang ingin diplay
 
+link video Presentasi:
+https://drive.google.com/folderview?id=1LB_CwHYmg414Jx6lMfqfyOBHI9cslGUV
