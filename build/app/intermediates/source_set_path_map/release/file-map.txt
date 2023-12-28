@@ -1,0 +1,26 @@
+com.example.music_player_app1.app-core-1.7.0-0 C:\Users\Dell\.gradle\caches\transforms-3\010b79dbae0a8b74028aa5645158e6aa\transformed\core-1.7.0\res
+com.example.music_player_app1.app-jetified-annotation-experimental-1.1.0-1 C:\Users\Dell\.gradle\caches\transforms-3\02315cc9f75263553d2042718fc375ee\transformed\jetified-annotation-experimental-1.1.0\res
+com.example.music_player_app1.app-jetified-window-1.0.0-beta04-2 C:\Users\Dell\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\res
+com.example.music_player_app1.app-lifecycle-viewmodel-2.3.1-3 C:\Users\Dell\.gradle\caches\transforms-3\1791954ce90ab40f127d5204de556393\transformed\lifecycle-viewmodel-2.3.1\res
+com.example.music_player_app1.app-media-1.6.0-4 C:\Users\Dell\.gradle\caches\transforms-3\62f17dc01d15e7429c25416f9b39b1aa\transformed\media-1.6.0\res
+com.example.music_player_app1.app-jetified-media2-session-1.2.1-5 C:\Users\Dell\.gradle\caches\transforms-3\865ff9e863a35a22363a538091de9539\transformed\jetified-media2-session-1.2.1\res
+com.example.music_player_app1.app-jetified-exoplayer-core-2.18.7-6 C:\Users\Dell\.gradle\caches\transforms-3\98211325724c98e4e72cf2943cba61bf\transformed\jetified-exoplayer-core-2.18.7\res
+com.example.music_player_app1.app-jetified-window-java-1.0.0-beta04-7 C:\Users\Dell\.gradle\caches\transforms-3\99750bb863b6fe460a7b5da8686e778d\transformed\jetified-window-java-1.0.0-beta04\res
+com.example.music_player_app1.app-jetified-media2-common-1.2.1-8 C:\Users\Dell\.gradle\caches\transforms-3\a77150f9b371436f267bc8247cfdbeb4\transformed\jetified-media2-common-1.2.1\res
+com.example.music_player_app1.app-lifecycle-runtime-2.3.1-9 C:\Users\Dell\.gradle\caches\transforms-3\db4b39695b36fb6bc4e9dc229c8d81d0\transformed\lifecycle-runtime-2.3.1\res
+com.example.music_player_app1.app-main-10 D:\MUSIK PLAYER\2\android\app\src\main\res
+com.example.music_player_app1.app-release-11 D:\MUSIK PLAYER\2\android\app\src\release\res
+com.example.music_player_app1.app-pngs-12 D:\MUSIK PLAYER\2\build\app\generated\res\pngs\release
+com.example.music_player_app1.app-resValues-13 D:\MUSIK PLAYER\2\build\app\generated\res\resValues\release
+com.example.music_player_app1.app-rs-14 D:\MUSIK PLAYER\2\build\app\generated\res\rs\release
+com.example.music_player_app1.app-mergeReleaseResources-15 D:\MUSIK PLAYER\2\build\app\intermediates\incremental\release\mergeReleaseResources\merged.dir
+com.example.music_player_app1.app-mergeReleaseResources-16 D:\MUSIK PLAYER\2\build\app\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+com.example.music_player_app1.app-merged_res-17 D:\MUSIK PLAYER\2\build\app\intermediates\merged_res\release
+com.example.music_player_app1.app-packaged_res-18 D:\MUSIK PLAYER\2\build\audio_service\intermediates\packaged_res\release
+com.example.music_player_app1.app-packaged_res-19 D:\MUSIK PLAYER\2\build\audio_session\intermediates\packaged_res\release
+com.example.music_player_app1.app-packaged_res-20 D:\MUSIK PLAYER\2\build\just_audio\intermediates\packaged_res\release
+com.example.music_player_app1.app-packaged_res-21 D:\MUSIK PLAYER\2\build\on_audio_query_android\intermediates\packaged_res\release
+com.example.music_player_app1.app-packaged_res-22 D:\MUSIK PLAYER\2\build\path_provider_android\intermediates\packaged_res\release
+com.example.music_player_app1.app-packaged_res-23 D:\MUSIK PLAYER\2\build\permission_handler_android\intermediates\packaged_res\release
+com.example.music_player_app1.app-packaged_res-24 D:\MUSIK PLAYER\2\build\shared_preferences_android\intermediates\packaged_res\release
+com.example.music_player_app1.app-packaged_res-25 D:\MUSIK PLAYER\2\build\sqflite\intermediates\packaged_res\release

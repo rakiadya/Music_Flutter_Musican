@@ -1,0 +1,13 @@
+com.lucasjosino.on_audio_query.on_audio_query_android-jetified-annotation-experimental-1.1.0-0 C:\Users\Dell\.gradle\caches\transforms-3\02315cc9f75263553d2042718fc375ee\transformed\jetified-annotation-experimental-1.1.0\res
+com.lucasjosino.on_audio_query.on_audio_query_android-jetified-window-1.0.0-beta04-1 C:\Users\Dell\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\res
+com.lucasjosino.on_audio_query.on_audio_query_android-lifecycle-viewmodel-2.3.1-2 C:\Users\Dell\.gradle\caches\transforms-3\1791954ce90ab40f127d5204de556393\transformed\lifecycle-viewmodel-2.3.1\res
+com.lucasjosino.on_audio_query.on_audio_query_android-jetified-window-java-1.0.0-beta04-3 C:\Users\Dell\.gradle\caches\transforms-3\99750bb863b6fe460a7b5da8686e778d\transformed\jetified-window-java-1.0.0-beta04\res
+com.lucasjosino.on_audio_query.on_audio_query_android-core-1.6.0-4 C:\Users\Dell\.gradle\caches\transforms-3\d08c73bfb05384f2e52578171dbd141e\transformed\core-1.6.0\res
+com.lucasjosino.on_audio_query.on_audio_query_android-main-5 C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\on_audio_query_android-1.1.0\android\src\main\res
+com.lucasjosino.on_audio_query.on_audio_query_android-release-6 C:\Users\Dell\AppData\Local\Pub\Cache\hosted\pub.dev\on_audio_query_android-1.1.0\android\src\release\res
+com.lucasjosino.on_audio_query.on_audio_query_android-pngs-7 D:\MUSIK PLAYER\2\build\on_audio_query_android\generated\res\pngs\release
+com.lucasjosino.on_audio_query.on_audio_query_android-resValues-8 D:\MUSIK PLAYER\2\build\on_audio_query_android\generated\res\resValues\release
+com.lucasjosino.on_audio_query.on_audio_query_android-rs-9 D:\MUSIK PLAYER\2\build\on_audio_query_android\generated\res\rs\release
+com.lucasjosino.on_audio_query.on_audio_query_android-mergeReleaseResources-10 D:\MUSIK PLAYER\2\build\on_audio_query_android\intermediates\incremental\release\mergeReleaseResources\merged.dir
+com.lucasjosino.on_audio_query.on_audio_query_android-mergeReleaseResources-11 D:\MUSIK PLAYER\2\build\on_audio_query_android\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+com.lucasjosino.on_audio_query.on_audio_query_android-merged_res-12 D:\MUSIK PLAYER\2\build\on_audio_query_android\intermediates\merged_res\release

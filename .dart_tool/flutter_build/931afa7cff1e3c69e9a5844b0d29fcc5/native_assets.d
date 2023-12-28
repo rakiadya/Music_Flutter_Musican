@@ -1,0 +1,1 @@
+ D:\\MUSIK\ PLAYER\\2\\.dart_tool\\flutter_build\\931afa7cff1e3c69e9a5844b0d29fcc5\\native_assets.yaml: 

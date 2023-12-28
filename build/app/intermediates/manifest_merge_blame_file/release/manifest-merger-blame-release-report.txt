@@ -1,0 +1,584 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.music_player_app1"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml
+10    <!-- Android 12 or below -->
+11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+11-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:3:3-78
+11-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:3:20-76
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:4:3-77
+12-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:4:20-75
+13    <uses-permission android:name="android.permission.WAKE_LOCK" />
+13-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:5:3-66
+13-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:5:20-63
+14    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+14-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:6:3-75
+14-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:6:20-72
+15    <!-- Android 13 or greater -->
+16    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+16-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:8:3-73
+16-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:8:20-71
+17    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+17-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:9:3-72
+17-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:9:20-70
+18    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+18-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:10:3-72
+18-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:10:20-70
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+19-->[com.google.android.exoplayer:exoplayer-core:2.18.7] C:\Users\Dell\.gradle\caches\transforms-3\98211325724c98e4e72cf2943cba61bf\transformed\jetified-exoplayer-core-2.18.7\AndroidManifest.xml:24:5-79
+19-->[com.google.android.exoplayer:exoplayer-core:2.18.7] C:\Users\Dell\.gradle\caches\transforms-3\98211325724c98e4e72cf2943cba61bf\transformed\jetified-exoplayer-core-2.18.7\AndroidManifest.xml:24:22-76
+20
+21    <queries>
+21-->[androidx.media2:media2-session:1.2.1] C:\Users\Dell\.gradle\caches\transforms-3\865ff9e863a35a22363a538091de9539\transformed\jetified-media2-session-1.2.1\AndroidManifest.xml:24:5-34:15
+22        <intent>
+22-->[androidx.media2:media2-session:1.2.1] C:\Users\Dell\.gradle\caches\transforms-3\865ff9e863a35a22363a538091de9539\transformed\jetified-media2-session-1.2.1\AndroidManifest.xml:25:9-27:18
+23            <action android:name="android.media.browse.MediaBrowserService" />
+23-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:186:17-83
+23-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:186:25-80
+24        </intent>
+25        <intent>
+25-->[androidx.media2:media2-session:1.2.1] C:\Users\Dell\.gradle\caches\transforms-3\865ff9e863a35a22363a538091de9539\transformed\jetified-media2-session-1.2.1\AndroidManifest.xml:28:9-30:18
+26            <action android:name="androidx.media2.session.MediaSessionService" />
+26-->[androidx.media2:media2-session:1.2.1] C:\Users\Dell\.gradle\caches\transforms-3\865ff9e863a35a22363a538091de9539\transformed\jetified-media2-session-1.2.1\AndroidManifest.xml:29:13-82
+26-->[androidx.media2:media2-session:1.2.1] C:\Users\Dell\.gradle\caches\transforms-3\865ff9e863a35a22363a538091de9539\transformed\jetified-media2-session-1.2.1\AndroidManifest.xml:29:21-79
+27        </intent>
+28        <intent>
+28-->[androidx.media2:media2-session:1.2.1] C:\Users\Dell\.gradle\caches\transforms-3\865ff9e863a35a22363a538091de9539\transformed\jetified-media2-session-1.2.1\AndroidManifest.xml:31:9-33:18
+29            <action android:name="androidx.media2.session.MediaLibraryService" />
+29-->[androidx.media2:media2-session:1.2.1] C:\Users\Dell\.gradle\caches\transforms-3\865ff9e863a35a22363a538091de9539\transformed\jetified-media2-session-1.2.1\AndroidManifest.xml:32:13-82
+29-->[androidx.media2:media2-session:1.2.1] C:\Users\Dell\.gradle\caches\transforms-3\865ff9e863a35a22363a538091de9539\transformed\jetified-media2-session-1.2.1\AndroidManifest.xml:32:21-79
+30        </intent>
+31    </queries>
+32
+33    <application
+34        android:name="android.app.Application"
+34-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:13:9-42
+35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+35-->[androidx.core:core:1.7.0] C:\Users\Dell\.gradle\caches\transforms-3\010b79dbae0a8b74028aa5645158e6aa\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+36        android:icon="@mipmap/ic_launcher"
+36-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:14:9-43
+37        android:label="Musican" >
+37-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:12:9-32
+38        <activity
+38-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:15:9-175:20
+39            android:name="com.ryanheise.audioservice.AudioServiceActivity"
+39-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:16:13-75
+40            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+40-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:20:13-163
+41            android:exported="true"
+41-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:17:13-36
+42            android:hardwareAccelerated="true"
+42-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:21:13-47
+43            android:launchMode="singleTop"
+43-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:18:13-43
+44            android:theme="@style/LaunchTheme"
+44-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:19:13-47
+45            android:windowSoftInputMode="adjustResize" >
+45-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:22:13-55
+46
+47            <!--
+48                 Specifies an Android theme to apply to this Activity as soon as
+49                 the Android process has started. This theme is visible to the user
+50                 while the Flutter UI initializes. After that, this theme continues
+51                 to determine the Window background behind the Flutter UI.
+52            -->
+53            <meta-data
+53-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:27:13-30:17
+54                android:name="io.flutter.embedding.android.NormalTheme"
+54-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:28:15-70
+55                android:resource="@style/NormalTheme" />
+55-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:29:15-52
+56
+57            <intent-filter>
+57-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:31:13-34:29
+58                <action android:name="android.intent.action.MAIN" />
+58-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:32:17-68
+58-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:32:25-66
+59
+60                <category android:name="android.intent.category.LAUNCHER" />
+60-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:33:17-76
+60-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:33:27-74
+61            </intent-filter>
+62            <intent-filter>
+62-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:35:13-41:29
+63                <action android:name="android.intent.action.GET_CONTENT" />
+63-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:36:17-76
+63-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:36:25-73
+64
+65                <category android:name="android.intent.category.DEFAULT" />
+65-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:38:17-76
+65-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:38:27-73
+66
+67                <data android:mimeType="audio/*" />
+67-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+67-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:23-49
+68            </intent-filter>
+69            <intent-filter>
+69-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:42:13-61:29
+70                <action android:name="android.intent.action.VIEW" />
+70-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:43:17-69
+70-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:43:25-66
+71
+72                <category android:name="android.intent.category.DEFAULT" />
+72-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:38:17-76
+72-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:38:27-73
+73                <category android:name="android.intent.category.BROWSABLE" />
+73-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:46:17-78
+73-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:46:27-75
+74
+75                <data android:scheme="" />
+75-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+75-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:48:23-40
+76                <data android:scheme="file" />
+76-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+76-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:48:23-40
+77                <data android:scheme="ftp" />
+77-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+77-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:48:23-40
+78                <data android:scheme="ftps" />
+78-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+78-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:48:23-40
+79                <data android:scheme="sftp" />
+79-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+79-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:48:23-40
+80                <data android:scheme="content" />
+80-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+80-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:48:23-40
+81                <data android:scheme="http" />
+81-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+81-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:48:23-40
+82                <data android:scheme="https" />
+82-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+82-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:48:23-40
+83                <data android:scheme="smb" />
+83-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+83-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:48:23-40
+84                <data android:mimeType="audio/*" />
+84-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+84-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:23-49
+85                <data android:mimeType="application/ogg" />
+85-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+85-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:23-49
+86                <data android:mimeType="application/x-ogg" />
+86-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+86-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:23-49
+87                <data android:mimeType="application/itunes" />
+87-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+87-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:23-49
+88            </intent-filter>
+89            <intent-filter>
+89-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:62:13-171:29
+90                <action android:name="android.intent.action.VIEW" />
+90-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:43:17-69
+90-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:43:25-66
+91
+92                <category android:name="android.intent.category.DEFAULT" />
+92-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:38:17-76
+92-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:38:27-73
+93                <category android:name="android.intent.category.BROWSABLE" />
+93-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:46:17-78
+93-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:46:27-75
+94
+95                <data android:scheme="" />
+95-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+95-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:48:23-40
+96                <data android:scheme="file" />
+96-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+96-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:48:23-40
+97                <data android:scheme="ftp" />
+97-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+97-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:48:23-40
+98                <data android:scheme="content" />
+98-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+98-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:48:23-40
+99                <data android:scheme="http" />
+99-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+99-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:48:23-40
+100                <data android:scheme="https" />
+100-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+100-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:48:23-40
+101                <data android:host="*" />
+101-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+101-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:74:23-39
+102                <data android:pathPattern=".*\\.3ga" />
+102-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+102-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+103                <data android:pathPattern=".*\\.a52" />
+103-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+103-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+104                <data android:pathPattern=".*\\.aac" />
+104-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+104-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+105                <data android:pathPattern=".*\\.ac3" />
+105-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+105-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+106                <data android:pathPattern=".*\\.adt" />
+106-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+106-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+107                <data android:pathPattern=".*\\.adts" />
+107-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+107-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+108                <data android:pathPattern=".*\\.aif" />
+108-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+108-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+109                <data android:pathPattern=".*\\.aifc" />
+109-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+109-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+110                <data android:pathPattern=".*\\.aiff" />
+110-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+110-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+111                <data android:pathPattern=".*\\.amr" />
+111-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+111-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+112                <data android:pathPattern=".*\\.aob" />
+112-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+112-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+113                <data android:pathPattern=".*\\.ape" />
+113-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+113-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+114                <data android:pathPattern=".*\\.awb" />
+114-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+114-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+115                <data android:pathPattern=".*\\.caf" />
+115-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+115-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+116                <data android:pathPattern=".*\\.dts" />
+116-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+116-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+117                <data android:pathPattern=".*\\.flac" />
+117-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+117-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+118                <data android:pathPattern=".*\\.it" />
+118-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+118-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+119                <data android:pathPattern=".*\\.m4a" />
+119-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+119-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+120                <data android:pathPattern=".*\\.m4b" />
+120-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+120-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+121                <data android:pathPattern=".*\\.m4p" />
+121-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+121-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+122                <data android:pathPattern=".*\\.mid" />
+122-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+122-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+123                <data android:pathPattern=".*\\.mka" />
+123-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+123-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+124                <data android:pathPattern=".*\\.mlp" />
+124-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+124-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+125                <data android:pathPattern=".*\\.mod" />
+125-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+125-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+126                <data android:pathPattern=".*\\.mpa" />
+126-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+126-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+127                <data android:pathPattern=".*\\.mp1" />
+127-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+127-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+128                <data android:pathPattern=".*\\.mp2" />
+128-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+128-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+129                <data android:pathPattern=".*\\.mp3" />
+129-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+129-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+130                <data android:pathPattern=".*\\.mpc" />
+130-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+130-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+131                <data android:pathPattern=".*\\.mpga" />
+131-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+131-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+132                <data android:pathPattern=".*\\.oga" />
+132-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+132-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+133                <data android:pathPattern=".*\\.ogg" />
+133-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+133-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+134                <data android:pathPattern=".*\\.oma" />
+134-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+134-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+135                <data android:pathPattern=".*\\.opus" />
+135-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+135-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+136                <data android:pathPattern=".*\\.ra" />
+136-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+136-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+137                <data android:pathPattern=".*\\.ram" />
+137-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+137-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+138                <data android:pathPattern=".*\\.rmi" />
+138-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+138-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+139                <data android:pathPattern=".*\\.s3m" />
+139-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+139-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+140                <data android:pathPattern=".*\\.spx" />
+140-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+140-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+141                <data android:pathPattern=".*\\.tta" />
+141-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+141-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+142                <data android:pathPattern=".*\\.voc" />
+142-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+142-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+143                <data android:pathPattern=".*\\.vqf" />
+143-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+143-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+144                <data android:pathPattern=".*\\.w64" />
+144-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+144-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+145                <data android:pathPattern=".*\\.wav" />
+145-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+145-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+146                <data android:pathPattern=".*\\.wma" />
+146-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+146-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+147                <data android:pathPattern=".*\\.wv" />
+147-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+147-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+148                <data android:pathPattern=".*\\.xa" />
+148-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+148-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+149                <data android:pathPattern=".*\\.xm" />
+149-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+149-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+150                <data android:pathPattern=".*\\.3GA" />
+150-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+150-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+151                <data android:pathPattern=".*\\.A52" />
+151-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+151-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+152                <data android:pathPattern=".*\\.AAC" />
+152-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+152-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+153                <data android:pathPattern=".*\\.AC3" />
+153-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+153-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+154                <data android:pathPattern=".*\\.ADT" />
+154-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+154-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+155                <data android:pathPattern=".*\\.ADTS" />
+155-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+155-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+156                <data android:pathPattern=".*\\.AIF" />
+156-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+156-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+157                <data android:pathPattern=".*\\.AIFC" />
+157-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+157-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+158                <data android:pathPattern=".*\\.AIFF" />
+158-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+158-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+159                <data android:pathPattern=".*\\.AMR" />
+159-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+159-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+160                <data android:pathPattern=".*\\.AOB" />
+160-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+160-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+161                <data android:pathPattern=".*\\.APE" />
+161-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+161-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+162                <data android:pathPattern=".*\\.AWB" />
+162-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+162-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+163                <data android:pathPattern=".*\\.CAF" />
+163-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+163-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+164                <data android:pathPattern=".*\\.DTS" />
+164-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+164-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+165                <data android:pathPattern=".*\\.FLAC" />
+165-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+165-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+166                <data android:pathPattern=".*\\.IT" />
+166-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+166-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+167                <data android:pathPattern=".*\\.M4A" />
+167-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+167-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+168                <data android:pathPattern=".*\\.M4B" />
+168-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+168-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+169                <data android:pathPattern=".*\\.M4P" />
+169-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+169-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+170                <data android:pathPattern=".*\\.MID" />
+170-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+170-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+171                <data android:pathPattern=".*\\.MKA" />
+171-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+171-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+172                <data android:pathPattern=".*\\.MLP" />
+172-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+172-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+173                <data android:pathPattern=".*\\.MOD" />
+173-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+173-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+174                <data android:pathPattern=".*\\.MPA" />
+174-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+174-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+175                <data android:pathPattern=".*\\.MP1" />
+175-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+175-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+176                <data android:pathPattern=".*\\.MP2" />
+176-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+176-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+177                <data android:pathPattern=".*\\.MP3" />
+177-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+177-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+178                <data android:pathPattern=".*\\.MPC" />
+178-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+178-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+179                <data android:pathPattern=".*\\.MPGA" />
+179-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+179-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+180                <data android:pathPattern=".*\\.OGA" />
+180-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+180-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+181                <data android:pathPattern=".*\\.OGG" />
+181-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+181-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+182                <data android:pathPattern=".*\\.OMA" />
+182-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+182-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+183                <data android:pathPattern=".*\\.OPUS" />
+183-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+183-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+184                <data android:pathPattern=".*\\.RA" />
+184-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+184-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+185                <data android:pathPattern=".*\\.RAM" />
+185-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+185-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+186                <data android:pathPattern=".*\\.RMI" />
+186-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+186-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+187                <data android:pathPattern=".*\\.S3M" />
+187-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+187-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+188                <data android:pathPattern=".*\\.SPX" />
+188-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+188-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+189                <data android:pathPattern=".*\\.TTA" />
+189-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+189-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+190                <data android:pathPattern=".*\\.VOC" />
+190-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+190-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+191                <data android:pathPattern=".*\\.VQF" />
+191-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+191-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+192                <data android:pathPattern=".*\\.W64" />
+192-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+192-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+193                <data android:pathPattern=".*\\.WAV" />
+193-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+193-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+194                <data android:pathPattern=".*\\.WMA" />
+194-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+194-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+195                <data android:pathPattern=".*\\.WV" />
+195-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+195-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+196                <data android:pathPattern=".*\\.XA" />
+196-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+196-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+197                <data android:pathPattern=".*\\.XM" />
+197-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:40:17-52
+197-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:75:23-53
+198            </intent-filter>
+199            <intent-filter>
+199-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:172:13-174:29
+200                <action android:name="es.antonborri.home_widget.action.LAUNCH" />
+200-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:173:17-82
+200-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:173:25-79
+201            </intent-filter>
+202        </activity>
+203        <!--
+204             Don't delete the meta-data below.
+205             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+206        -->
+207        <meta-data
+207-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:178:9-180:33
+208            android:name="flutterEmbedding"
+208-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:179:13-44
+209            android:value="2" />
+209-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:180:13-30
+210
+211        <service
+211-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:182:9-188:19
+212            android:name="com.ryanheise.audioservice.AudioService"
+212-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:183:13-67
+213            android:exported="true" >
+213-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:184:13-36
+214            <intent-filter>
+214-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:185:13-187:29
+215                <action android:name="android.media.browse.MediaBrowserService" />
+215-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:186:17-83
+215-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:186:25-80
+216            </intent-filter>
+217        </service>
+218
+219        <receiver
+219-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:190:9-196:20
+220            android:name="com.ryanheise.audioservice.MediaButtonReceiver"
+220-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:191:13-74
+221            android:exported="true" >
+221-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:192:13-36
+222            <intent-filter>
+222-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:193:13-195:29
+223                <action android:name="android.intent.action.MEDIA_BUTTON" />
+223-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:194:17-77
+223-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:194:25-74
+224            </intent-filter>
+225        </receiver>
+226
+227        <!-- Used for Background Work -->
+228        <receiver
+228-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:199:9-204:20
+229            android:name="es.antonborri.home_widget.HomeWidgetBackgroundReceiver"
+229-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:199:19-88
+230            android:exported="true" >
+230-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:200:13-36
+231            <intent-filter>
+231-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:201:13-203:29
+232                <action android:name="es.antonborri.home_widget.action.BACKGROUND" />
+232-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:202:17-86
+232-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:202:25-83
+233            </intent-filter>
+234        </receiver>
+235
+236        <service
+236-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:205:9-206:95
+237            android:name="es.antonborri.home_widget.HomeWidgetBackgroundService"
+237-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:205:18-86
+238            android:exported="true"
+238-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:206:70-93
+239            android:permission="android.permission.BIND_JOB_SERVICE" />
+239-->D:\MUSIK PLAYER\2\android\app\src\main\AndroidManifest.xml:206:13-69
+240
+241        <uses-library
+241-->[androidx.window:window:1.0.0-beta04] C:\Users\Dell\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+242            android:name="androidx.window.extensions"
+242-->[androidx.window:window:1.0.0-beta04] C:\Users\Dell\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+243            android:required="false" />
+243-->[androidx.window:window:1.0.0-beta04] C:\Users\Dell\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+244        <uses-library
+244-->[androidx.window:window:1.0.0-beta04] C:\Users\Dell\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+245            android:name="androidx.window.sidecar"
+245-->[androidx.window:window:1.0.0-beta04] C:\Users\Dell\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+246            android:required="false" />
+246-->[androidx.window:window:1.0.0-beta04] C:\Users\Dell\.gradle\caches\transforms-3\076eb9235982ee06112d76594ea8585f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+247    </application>
+248
+249</manifest>
